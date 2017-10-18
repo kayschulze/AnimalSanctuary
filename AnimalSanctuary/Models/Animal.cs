@@ -1,7 +1,10 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AnimalSanctuary.Models
 {
+    [Table("Animals")]
     public class Animal
     {
         public int AnimalId;
@@ -28,7 +31,7 @@ namespace AnimalSanctuary.Models
 
 		public override int GetHashCode()
 		{
-			return this.ItemId.GetHashCode();
+			return this.AnimalId.GetHashCode();
 		}
     }
 }

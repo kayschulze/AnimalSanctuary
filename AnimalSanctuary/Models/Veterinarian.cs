@@ -1,9 +1,13 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AnimalSanctuary.Models
 {
+    [Table("Veterinarians")]
     public class Veterinarian
     {
+        [Key]
         public int VeterinarianId;
         public string Name;
         public string Specialty;

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalSanctuary", "AnimalSanctuary\AnimalSanctuary.csproj", "{EA0A9EB4-8174-4C9B-ADC8-D800DFA4B0AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalSanctuary.Tests", "AnimalSanctuary.Tests\AnimalSanctuary.Tests.csproj", "{BF431F57-75C7-4D61-AEC0-C668396BCD91}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalSanctuary.Tests", "AnimalSanctuary.Tests\AnimalSanctuary.Tests.csproj", "{366DAC4C-0C7C-4C76-9D70-8C2F9319C292}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +15,9 @@ Global
 		{EA0A9EB4-8174-4C9B-ADC8-D800DFA4B0AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA0A9EB4-8174-4C9B-ADC8-D800DFA4B0AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA0A9EB4-8174-4C9B-ADC8-D800DFA4B0AA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BF431F57-75C7-4D61-AEC0-C668396BCD91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BF431F57-75C7-4D61-AEC0-C668396BCD91}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BF431F57-75C7-4D61-AEC0-C668396BCD91}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BF431F57-75C7-4D61-AEC0-C668396BCD91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{366DAC4C-0C7C-4C76-9D70-8C2F9319C292}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{366DAC4C-0C7C-4C76-9D70-8C2F9319C292}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{366DAC4C-0C7C-4C76-9D70-8C2F9319C292}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{366DAC4C-0C7C-4C76-9D70-8C2F9319C292}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
