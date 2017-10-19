@@ -36,5 +36,20 @@ namespace AnimalSanctuary.Tests.ControllerTests
             //Assert
             Assert.IsInstanceOfType(result, typeof(ActionResult));
         }
+
+        [TestMethod]
+        public void Mock_IndexListofVeterinarians_Test()
+        {
+            //Arrange
+            DbSetup();
+            ViewResult indexView = new VeterinariansController(mock.Object).Index() as ViewResult;
+
+            //Act
+            var result = indexView.ViewData.Model;
+
+            //Assert
+            Assert.IsInstanceOfType(result, typeof(List<Veterinarian>)); 
+
+        }
     }
 }
