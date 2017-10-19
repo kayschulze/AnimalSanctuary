@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using AnimalSanctuary.Models;
 using AnimalSanctuary.Controllers;
@@ -35,5 +36,38 @@ namespace AnimalSanctuary.Tests.ControllerTests
             //Assert
             Assert.IsInstanceOfType(result, typeof(ActionResult));
         }
+
+        [TestMethod]
+        public void Mock_IndexListofAnimals_Test()
+        {
+            //Arrange
+            DbSetup();
+            ViewResult indexView = new AnimalsController(mock.Object).Index() as ViewResult;
+
+            //Act
+            var result = indexView.ViewData.Model;
+
+            //Assert
+            Assert.IsInstanceOfType(result, typeof(List<Animal>));
+        }
+
+        [TestMethod]
+        public void Mock_ConfirmEntry_Test()
+        {
+            // Arrange
+            DbSetup();
+            AnimalsController controller = new AnimalsController(mock.Object);
+            Animal testAnimal = new Animal();
+            testAnimal.Name = "Ted";
+            testAnimal.AnimalId = 1;
+
+            // Act
+            ViewResult indexView = controller.Index() as ViewResult;
+            var collection = indexView.ViewData.Model as List<Animal>;
+
+            // Assert
+            CollectionAssert.Contains(collection, testAnimal);
+        }
     }
 }
+

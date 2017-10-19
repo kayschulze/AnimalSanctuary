@@ -6,8 +6,17 @@ namespace AnimalSanctuary.Tests
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestTesting()
         {
+            //Arrange
+            int one = 1;
+            int two = 2;
+
+            //Act
+            int sum = one + two;
+
+            //Assert
+            Assert.AreEqual(3, sum);
         }
     }
 }
