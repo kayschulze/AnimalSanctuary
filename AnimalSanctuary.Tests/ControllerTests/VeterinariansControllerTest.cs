@@ -51,5 +51,23 @@ namespace AnimalSanctuary.Tests.ControllerTests
             Assert.IsInstanceOfType(result, typeof(List<Veterinarian>)); 
 
         }
+
+        [TestMethod]
+        public void Mock_ConfirmEntry_Test()
+        {
+            //Arrange
+            DbSetup();
+            VeterinariansController controller = new VeterinariansController(mock.Object);
+            Veterinarian testVeterinarian = new Veterinarian();
+            testVeterinarian.Name = "Tessie";
+            testVeterinarian.VeterinarianId = 1;
+
+            //Act
+            ViewResult indexView = controller.Index() as ViewResult;
+            var collection = indexView.ViewData.Model as List<Veterinarian>;
+
+            //Assert
+            CollectionAssert.Contains(collection, testVeterinarian);
+        }
     }
 }
