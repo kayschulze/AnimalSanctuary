@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AnimalSanctuary.Models
 {
-    public class EFVeterinarianRepository
+    public class EFVeterinarianRepository : IVeterinarianRepository
     {
         AnimalSanctuaryContext db = new AnimalSanctuaryContext();
 
